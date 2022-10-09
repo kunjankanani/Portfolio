@@ -1,16 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunjan Kanani | PortFolio</title>
-	</head>
-	<body>
-		<h1>Kunjan Kanani</h1>
-		<hr>
-		<h3>PortFolio Site</h3>
-    <p>This Is My PortFolio</p>
-    <hr>
-	</body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunjan Kanani | PortFolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1daaa013ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" >
+        
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Student</p>
+        <h1>Hi, I'm<br><span>Kunjan </span>Kanani </h1>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!-----------------------------------about------------------------------------------>
+    <div id="about">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>My name is Kunjan Kanani I'm a Front End Engineer based in Rajkot ☀️.
+            I describe myself as a passionate developer who loves coding, open source, and the web platform ❤️.
+            Aside from my job, I like to create and contribute to open source projects.
+            That helps me to learn a ton of new stuff, grow as a developer and support other open source projects.
+            Also I enjoy writing technical things ✍️ at my blog.
+            In my free time you can find me play Cricket 🏏 , at the gym 🏋️‍♂️ , Watch Movie 🎥 or on tech meetups and
+            conferences around Rajkot and Gujarat 🗺
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>New Things</span><br><br>Develope App/Web</li><br>
+              <li><span>App Devlopment</span><br><br>Building Android/ios app</li><br>
+              <li><span>Web Devlopment</span><br><br>Web App Devlopment</li><br>
+            </ul>
+          </div>
+          <!-- <div class="tab-contents" id="experience"> 
+            <ul>
+              <li><span>New Things</span><br>Devlope App/Web</li>
+              <li><span>App 2222Devlopment</span><br>Building Android/ios app</li>
+              <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+            </ul>
+          </div> -->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li> <span><pre>2018 - 2019   10<sup>th</pre></span><br>Dholakiya School</li>
+              <li> <span><pre>2020 - 2021   12<sup>th</pre></span><br>Krishna Internation School</li>
+              <li> <span><pre>2021 - 2022   Collage</pre></span><br>Marwadi University</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1 class="sub-title">My Coding Skills</h1>
+    <div class="skills">
+      <h2>C/C++</h2>
+      <div class="progress">
+        <div class="c"><span>86%</span></div>
+      </div>
+      <h2>Java</h2>
+      <div class="progress">
+        <div class="ja"><span>50%</span></div>
+      </div>
+      <h2>Python</h2>
+      <div class="progress">
+        <div class="py"><span>35%</span></div>
+      </div>
+      <h2>Html/Css</h2>
+      <div class="progress">
+        <div class="ht"><span>70%</span></div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------Services------------------------------------------>
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-sharp fa-solid fa-code"></i>
+          <h2>Software Devlopment</h2>
+          <p> In Feature </p>
+          <a href="#">learn more..</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-gamepad"></i>
+          <h2>Game Design/Develope</h2>
+          <p>In Feature </p>
+          <a href="#">learn more..</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-android"></i>
+          <h2>App Devlopment</h2>
+          <p>In Feature </p>
+          <a href="#">learn more..</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------Portfolio------------------------------------------->
+
+  <div id="portfolio" class="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/RMTS.jpg">
+          <div class="layer">
+            <h3>RMTS App</h3>
+            <p>The app use for see the timing of bus or many things.
+              Download it from play store.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/pf.png" style="background-color: #fff;">
+          <div class="layer">
+            <h3>Web site Develope</h3>
+            <p>This PortFolio mead by me </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/CardGame.jpg">
+          <div class="layer">
+            <h3>Game Develope</h3>
+            <p>Card Game Using JAVA</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-----------------------------------------contact------------------------------------------->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sum-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> Kananikunjan58@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> 9106917737</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright <i class="fa-regular fa-copyright"></i> 3K </p>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+      sidemenu.style.right="0";
+    }
+    function closemenu(){
+      sidemenu.style.right="-200px";
+    }
+  </script>
+</body>
+
 </html>
