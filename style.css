@@ -10,14 +10,19 @@ html{
 }
 
 body {
-  background: #080808;
+  /* background: #080808; */
+  background: black;
   color: #fff;
+}
+
+img{
+  z-index: -1;
 }
 
 #header {
   width: 100%;
   height: 100vh;
-  /* background-image: url(images/background.png); */
+  /* background-image: url(https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -105,6 +110,15 @@ nav ul li a:hover::after {
 .about-col-2 {
   flex-basis: 60%;
 }
+.about-col-2 p{
+  padding-top: 15px;
+}
+
+.about-col-2 img {
+  width: 350px;
+  
+  border-radius: 15px;
+}
 
 .sub-title {
   font-size: 60px;
@@ -146,7 +160,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  color: #b54769;
+  color: #dd1454;
   font-size: 14px;
 }
 
@@ -160,13 +174,13 @@ nav ul li a:hover::after {
 
 /*<!---------------------------------Services------------------------------------------>*/
 
-#services {
+#RELAVANT #Certificate {
   padding: 30px 0;
 }
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -204,7 +218,7 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 
-/*-------------------------------------- portfolio------------------------------------- */
+/*-------------------------------------- my work------------------------------------- */
 
 .portfolio {
   padding: 50px 0;
@@ -212,7 +226,7 @@ nav ul li a:hover::after {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -379,7 +393,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px) {
   #header {
-    /* background-image: url(images/phone-background.png); */
+    background-image: url(https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true);
   }
 
   .header-text {
@@ -390,10 +404,22 @@ nav .fas{
   .header-text h1 {
     font-size: 30px;
   }
+  
+  .work-list{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .services-list{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 
   nav .fas {
     display: block;
     font-size: 25px;
+  }
+  .logo {
+    width: 200px;
+    height: 90px;
   }
 
   nav ul {
@@ -425,6 +451,9 @@ nav .fas{
   }
   .about-col-1{
     margin-bottom: 30px;
+  }
+  .about-col-2 img{
+    display: none;
   }
   .about-col-2{
     font-size: 16px;
@@ -507,12 +536,12 @@ nav .fas{
 }
 @keyframes ja{
   100%{
-    width: 50%;
+    width: 90%;
   }
 }
 @keyframes py{
   100%{
-    width: 35%;
+    width: 50%;
   }
 }
 @keyframes ht{
