@@ -115,7 +115,7 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 img {
-  width: 350px;
+  width: 450px;
   
   border-radius: 15px;
 }
@@ -393,7 +393,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true);
+    /* background-image: url(https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true); */
   }
 
   .header-text {
