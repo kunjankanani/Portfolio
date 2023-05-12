@@ -21,7 +21,7 @@
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#RELAVANT">COURSE WORK</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
@@ -291,11 +291,11 @@
           <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
         </div>
         <div class="contact-right">
-          <form>
+          <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="Email" placeholder="Your Email" required>
             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
+            <button type="submit" class="btn btn2" style="cursor: pointer;">Submit</button>
           </form>
         </div>
       </div>
@@ -331,5 +331,17 @@
       sidemenu.style.right="-200px";
     }
   </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbydT1UGexvv5KHrjjkGilXlXdtY8FfEauP7i28YBOJtRocolXQ7JdPuHWpoTitvCzplNQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
 </body>
 </html>
