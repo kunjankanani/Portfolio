@@ -392,9 +392,7 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px) {
-  #header {
-    /* background-image: url(https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true); */
-  }
+ 
 
   .header-text {
     margin-top: 100%;
